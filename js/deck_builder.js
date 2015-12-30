@@ -11,9 +11,9 @@ function perform() {
     alert('Zła liczba graczy!');
     return;
   }
-  baltarActive = askForCondition('Czy wybrano Baltara ?', 'Baltar wybrany');
-  boomerActive = askForCondition('Czy wybrano Boomer ?', 'Boomer wybrano');
-  exodusActive = askForCondition('Czy grasz z dodatkiem Exodus ?', 'Exodus wybrano');
+  baltarActive = askForCondition('baltar-active', 'Baltar wybrany');
+  boomerActive = askForCondition('boomer-active', 'Boomer wybrano');
+  exodusActive = askForCondition('exodus-active', 'Exodus wybrano');
 
   deckConfig = calculateDeck();
   bufor = bufor + "<br/>"
@@ -42,8 +42,8 @@ function renderBufor() {
   document.getElementById('output').innerHTML = bufor;
 }
 
-function askForCondition(question, labelForActive) {
-  var decision = confirm(question);
+function askForCondition(checkboxId, labelForActive) {
+  var decision = document.getElementById(checkboxId).checked;
   if (decision) {
     bufor = bufor + ', ' + labelForActive;
   }
@@ -51,7 +51,7 @@ function askForCondition(question, labelForActive) {
 }
 
 function askForPlayers() {
-  var decision = prompt('Ilu graczy (3-6) ?');
+  var decision = document.getElementById('players-count').value;
   bufor = 'Graczy: ' + decision;
   return decision;
 }

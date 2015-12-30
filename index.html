@@ -6,6 +6,21 @@
   </head>
   <body>
     <h1>BSG Loyality Card Deck</h1>
+    <form>
+      <div>
+        Ilość graczy: (3-6)
+        <input id="players-count" type="number" value="3" min="3" max="6">
+      </div>
+      <div>
+        <input id="baltar-active" type="checkbox"> Czy gra Baltar ?
+      </div>
+      <div>
+        <input id="boomer-active" type="checkbox"> Czy gra Boomer ?
+      </div>
+      <div>
+        <input id="exodus-active" type="checkbox"> Czy grasz z dodatkiem Exodus ?
+      </div>
+    </form>
     <button onclick="perform()">Wyliczamy!</button>
     <div id="output">Kliknij przycisk by wyliczyć</div>
   </body>
