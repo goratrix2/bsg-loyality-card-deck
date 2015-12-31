@@ -8,18 +8,18 @@ var deckConfig;
 function perform() {
   playersNumber = askForPlayers();
   if (playersNumber < 3 || playersNumber > 6) {
-    alert('Zła liczba graczy!');
+    alert('wrong number of players !');
     return;
   }
-  baltarActive = askForCondition('baltar-active', 'Baltar wybrany');
-  boomerActive = askForCondition('boomer-active', 'Boomer wybrano');
-  exodusActive = askForCondition('exodus-active', 'Exodus wybrano');
+  baltarActive = askForCondition('baltar-active', 'Baltar Selected');
+  boomerActive = askForCondition('boomer-active', 'Boomer Selected');
+  exodusActive = askForCondition('exodus-active', 'Exodus Selected');
 
   deckConfig = calculateDeck();
   bufor = bufor + "<br/>"
-  bufor = bufor + 'Konfiguracja: ludzie: ' + deckConfig.humansNumber +
-                  ', cyloni: ' + deckConfig.cylonNumber +
-                  ', sympatyk: ' + deckConfig.symphatizer;
+  bufor = bufor + 'Configuration: humans: ' + deckConfig.humansNumber +
+                  ', cylons: ' + deckConfig.cylonNumber +
+                  ', symphatizer: ' + deckConfig.symphatizer;
   renderDeck(deckConfig);
   renderBufor();
 }
@@ -39,7 +39,7 @@ function calculateDeck() {
 }
 
 function renderBufor() {
-  bufor = 'Wybrano: ' + bufor;
+  bufor = 'Selected: ' + bufor;
   document.getElementById('output').innerHTML = bufor;
 }
 
@@ -67,6 +67,6 @@ function askForCondition(checkboxId, labelForActive) {
 
 function askForPlayers() {
   var decision = document.getElementById('players-count').value;
-  bufor = 'Graczy: ' + decision;
+  bufor = 'players: ' + decision;
   return decision;
 }
