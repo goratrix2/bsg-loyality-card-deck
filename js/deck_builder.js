@@ -19,7 +19,7 @@ function perform() {
   bufor = bufor + "<br/>"
   bufor = bufor + 'Configuration: humans: ' + deckConfig.humansNumber +
                   ', cylons: ' + deckConfig.cylonNumber +
-                  ', symphatizer: ' + deckConfig.symphatizer;
+                  ', symphatizer: ' + deckConfig.symphatizer ;
   renderDeck(deckConfig);
   renderBufor();
 }
