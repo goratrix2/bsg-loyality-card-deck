@@ -46,13 +46,13 @@ function renderBufor() {
 function renderDeck(deckConfig){
   var markup = '';
   for (var i=0; i < deckConfig.humansNumber; i++) {
-    markup = markup + '<img src="http://www.geekalerts.com/u/Battlestar-Galactica-Commander-Adama-Bobble-Head-125x125.jpg">';
+    markup = markup + '<img src="img/loyalty-card2.jpg">';
   }
   for (var i=0; i < deckConfig.cylonNumber; i++) {
-    markup = markup + '<img src="http://thumbs.ebaystatic.com/d/l96/m/meeljUZ8sh48VnVhLe5N1Aw.jpg">';
+    markup = markup + '<img src="img/loyalty-card1.jpg">';
   }
   if (deckConfig.symphatizer) {
-    markup = markup + '<img src="http://www.wallpaperno.com/thumbnails/cover/20121031/grace%20park%20battlestar%20galactica%20cylon%20sharon%20boomer%20valerii%201280x1024%20wallpaper_www.wallpaperno.com_40.jpg">';
+    markup = markup + '<img src="img/loyalty-card3.jpg">';
   }
   document.getElementById('deck-output').innerHTML = markup;
 }
