@@ -1,4 +1,13 @@
 h1 {
   font-family:Helvetica, sans-serif;
-  color: #CCCCFF
+  color: #CCCCFF;
+}
+
+body {
+  color: #CCFFFF;
+  background-size: cover;
+}
+
+input {
+
 }
