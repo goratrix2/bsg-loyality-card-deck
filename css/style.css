@@ -1,3 +1,7 @@
+html {
+  height: 100%;
+}
+
 h1 {
   font-family:Helvetica, sans-serif;
   color: #CCCCFF;
@@ -6,14 +10,6 @@ h1 {
 body {
   color: #CCFFFF;
   background-size: cover;
-}
-
-input {
-
-}
-
-.img-responsive {
-  display: block;
-  max-width: 100%;
-  height: auto;
+  background-image: url("../img/cyloncompresed.gif");
+  background-repeat: no-repeat;
 }
