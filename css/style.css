@@ -1,15 +1,12 @@
 h1 {
   font-family:Helvetica, sans-serif;
-  color: #CCCCFF;
+  color: #19F700;
+  font-weight:100;
 }
 
 body {
-  color: #CCFFFF;
+  color: #FF5E5E;
   background-size: cover;
-}
-
-input {
-
 }
 
 .img-responsive {
