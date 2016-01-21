@@ -10,19 +10,12 @@ h1 {
 body {
   color: #CCFFFF;
   background-size: cover;
-<<<<<<< HEAD
-}
-
-input {
-
 }
 
 .img-responsive {
   display: block;
   max-width: 100%;
   height: auto;
-=======
   background-image: url("../img/cyloncompresed.gif");
   background-repeat: no-repeat;
->>>>>>> origin/gh-pages
 }
