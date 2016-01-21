@@ -4,18 +4,19 @@ html {
 
 h1 {
   font-family:Helvetica, sans-serif;
-  color: #CCCCFF;
+  color: #35CE05;
+  font-weight: bolder;
 }
 
 body {
-  color: #CCFFFF;
+  color: #FF0000;
   background-size: cover;
+  background-image: url("../img/cyloncompresed.gif");
+  background-repeat: no-repeat;
 }
 
 .img-responsive {
   display: block;
   max-width: 100%;
   height: auto;
-  background-image: url("../img/cyloncompresed.gif");
-  background-repeat: no-repeat;
 }
