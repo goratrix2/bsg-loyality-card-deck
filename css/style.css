@@ -4,14 +4,17 @@ html {
 
 h1 {
   font-family:Helvetica, sans-serif;
-  color: #19F700;
-  font-weight:100;
+  color: #CCCCFF;
 }
 
 body {
-  color: #FF5E5E;
+  color: #CCFFFF;
   background-size: cover;
 <<<<<<< HEAD
+}
+
+input {
+
 }
 
 .img-responsive {
