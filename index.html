@@ -5,39 +5,69 @@
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+            integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+            crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/deck_builder.js"></script>
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+          integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+          crossorigin="anonymous">
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css"
+          integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r"
+          crossorigin="anonymous">
     <link rel="Stylesheet" type="text/css" href="css/style.css" />
-    <link href="css/bootstrap.min.css" rel="stylesheet">
   </head>
-  <body background="img/cyloncompresed.gif">
-    <h1>BSG Loyality Card Deck</h1>
-      <script src="js/bootstrap.min.js"></script>
-    <form>
-      <div>
-        number of Players: (3-6)
-        <input id="players-count" type="number" value="3" min="3" max="6">
+  <body>
+    <div class="container">
+      <h1>BSG Loyality Card Deck</h1>
+      <div class="row">
+        <div class="col-md-4">
+          <form>
+            <div>
+              <label>number of Players: (3-6)</label>
+              <input id="players-count" type="number" value="3" min="3" max="6">
+            </div>
+            <div>
+              <label>
+                <input id="baltar-active" type="checkbox">
+                Include Gaius Baltar ?
+              </label>
+            </div>
+            <div>
+              <label>
+                <input id="boomer-active" type="checkbox">
+                Include Sharon "Boomer" Valerii ?
+              </label>
+            </div>
+            <div>
+              <label>
+                <input id="exodus-active" type="checkbox">
+                Use Exodus Rules ?
+              </label>
+            </div>
+          </form>
+          <button onclick="perform()" class="btn btn-danger">
+            <i class="glyphicon glyphicon-fire"></i>
+            Calculate!
+          </button>
+          <div id="calculate-hint">Press to calculate</div>
+        </div>
+        <div class="col-md-8">
+          <div id="output"></div>
+          <div id="deck-output"></div>
+        </div>
       </div>
-      <div>
-        <input id="baltar-active" type="checkbox"> Include Gaius Baltar ?
-      </div>
-      <div>
-        <input id="boomer-active" type="checkbox"> Include Sharon "Boomer" Valerii ?
-      </div>
-      <div>
-        <input id="exodus-active" type="checkbox"> Use Exodus Rules ?
-      </div>
-    </form>
-    <button onclick="perform()">Calculate!</button>
-    <div id="output">Press to calculate</div>
-    <div id="deck-output"></div>
   </body>
 </html>
 
 <!--
 
 TODO:
-1. przenieść skrypty do pliku .js DONE
-2. pozwolić userowi definiować ustawienia w formularzu DONE
-3. stylowanie w css
+4. Ostylować formularz
+5. Informacje o błędnej ilości graczy wyświelić na stronie zamiast alert
 
 -->

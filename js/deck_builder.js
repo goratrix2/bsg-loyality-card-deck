@@ -20,8 +20,13 @@ function perform() {
   bufor = bufor + 'Configuration: humans: ' + deckConfig.humansNumber +
                   ', cylons: ' + deckConfig.cylonNumber +
                   ', symphatizer: ' + deckConfig.symphatizer ;
+  hideHint();
   renderDeck(deckConfig);
   renderBufor();
+}
+
+function hideHint() {
+  $('#calculate-hint').hide();
 }
 
 function calculateDeck() {
