@@ -22,11 +22,17 @@
     <link rel="Stylesheet" type="text/css" href="css/style.css" />
   </head>
   <body>
-    <audio controls loop>
-  <source src="BSG_Cylon.wav" type="audio/wav">
+    <audio id="mute" autoplay loop>
+    <source src="BSG_Cylon.wav" type="audio/wav">
 
-  Your browser does not support the audio element.
-  </audio>
+    Your browser does not support the audio element.
+    </audio>
+    <div>
+      <button onclick="document.getElementById('mute').pause()" class="btn btn-danger">
+        <i class="glyphicon glyphicon-music"></i>
+        Mute
+      </button>
+    </div>
     <div class="container">
       <h1>BSG Loyality Card Deck</h1>
       <div class="row">
